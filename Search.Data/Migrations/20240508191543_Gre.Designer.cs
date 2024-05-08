@@ -11,8 +11,8 @@ using Search.Data;
 namespace Search.Data.Migrations
 {
     [DbContext(typeof(SearchDbContext))]
-    [Migration("20240506182347_SearchT")]
-    partial class SearchT
+    [Migration("20240508191543_Gre")]
+    partial class Gre
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,16 +32,16 @@ namespace Search.Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<double>("Height")
+                    b.Property<double>("X1")
                         .HasColumnType("double precision");
 
-                    b.Property<double>("Width")
+                    b.Property<double>("X2")
                         .HasColumnType("double precision");
 
-                    b.Property<double>("X")
+                    b.Property<double>("Y1")
                         .HasColumnType("double precision");
 
-                    b.Property<double>("Y")
+                    b.Property<double>("Y2")
                         .HasColumnType("double precision");
 
                     b.HasKey("Id");

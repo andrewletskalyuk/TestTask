@@ -29,16 +29,16 @@ namespace Search.Data.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<double>("Height")
+                    b.Property<double>("X1")
                         .HasColumnType("double precision");
 
-                    b.Property<double>("Width")
+                    b.Property<double>("X2")
                         .HasColumnType("double precision");
 
-                    b.Property<double>("X")
+                    b.Property<double>("Y1")
                         .HasColumnType("double precision");
 
-                    b.Property<double>("Y")
+                    b.Property<double>("Y2")
                         .HasColumnType("double precision");
 
                     b.HasKey("Id");

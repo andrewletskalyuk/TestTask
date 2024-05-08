@@ -7,9 +7,9 @@ public class SegmentDtoValidator : AbstractValidator<SegmentDto>
 {
 	public SegmentDtoValidator()
 	{
-        RuleFor(x => x.Width).GreaterThan(0).WithMessage("Width must be greater than zero.");
-        RuleFor(x => x.Height).GreaterThan(0).WithMessage("Height must be greater than zero.");
-        RuleFor(x => x.X).GreaterThan(0).WithMessage("Coordinate X must be greater than zero.");
-        RuleFor(x => x.Y).GreaterThan(0).WithMessage("Coordinate Y must be greater than zero.");
+        RuleFor(x => x.X1).GreaterThan(0).WithMessage("Coordinate X1 must be greater than zero.");
+        RuleFor(x => x.X2).GreaterThan(0).WithMessage("Coordinate X2 must be greater than zero.");
+        RuleFor(x => x.Y1).GreaterThan(0).WithMessage("Coordinate Y1 must be greater than zero.");
+        RuleFor(x => x.Y2).GreaterThan(0).WithMessage("Coordinate Y2 must be greater than zero.");
     }
 }

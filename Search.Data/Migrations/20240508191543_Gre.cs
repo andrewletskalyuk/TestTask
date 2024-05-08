@@ -6,7 +6,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Search.Data.Migrations
 {
     /// <inheritdoc />
-    public partial class SearchT : Migration
+    public partial class Gre : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -17,10 +17,10 @@ namespace Search.Data.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    X = table.Column<double>(type: "double precision", nullable: false),
-                    Y = table.Column<double>(type: "double precision", nullable: false),
-                    Width = table.Column<double>(type: "double precision", nullable: false),
-                    Height = table.Column<double>(type: "double precision", nullable: false)
+                    X1 = table.Column<double>(type: "double precision", nullable: false),
+                    Y1 = table.Column<double>(type: "double precision", nullable: false),
+                    X2 = table.Column<double>(type: "double precision", nullable: false),
+                    Y2 = table.Column<double>(type: "double precision", nullable: false)
                 },
                 constraints: table =>
                 {
